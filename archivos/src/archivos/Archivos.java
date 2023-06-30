@@ -18,11 +18,9 @@ public class Archivos {
     public static void main(String[] args) {
         Archivos esta = new Archivos();
 
-        String ruta1="C:\\Users\\nicoa\\OneDrive\\Escritorio\\Mis Archivos\\Diseños\\GCP",
-                ruta2="C:\\Users\\nicoa\\OneDrive\\Escritorio\\Mis Archivos\\Diseños\\Laura";
-
-//        String ruta1 = "C:\\Users\\nicoa\\OneDrive\\Escritorio\\Mis Archivos\\Mis programas\\Proyecto Pasar Archivos\\Carpeta1",
-//                ruta2 = "C:\\Users\\nicoa\\OneDrive\\Escritorio\\Mis Archivos\\Mis programas\\Proyecto Pasar Archivos\\Carpeta2";
+        //Rutas de las carpetas que se moverán
+        String ruta1 = "C:\\...\\Carpeta1",
+                ruta2 = "C:\\...\\Carpeta2";
         File carpetaOrigen = new File(ruta1);
         File carpetaDestino = new File(ruta2);
 
@@ -64,7 +62,7 @@ public class Archivos {
         Path temp = Files.move(Paths.get(rutaOrigen),
                 Paths.get(rutaDestino));
 
-        System.out.println("File renamed and moved successfully");
+        System.out.println("Archivo movido de forma exitosa");
 
         return true;
 
